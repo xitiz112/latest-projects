@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+
+
+
+
+{% block content %}
+<h1 class="form-heading">Total cost calculation</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ Tform|crispy}} 
+  
+    <button type="submit">Register</button>
+</form>
+
+
+{% endblock %}
+   
+

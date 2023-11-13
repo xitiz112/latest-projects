@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+
+
+
+
+{% block content %}
+<h1 class="form-heading">Member Registration</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ Rform|crispy}} 
+  
+    <button type="submit">Register</button>
+</form>
+
+
+{% endblock %}
+   
+

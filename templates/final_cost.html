@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1>Total cost </h1>
+   
+    <p>Training Plan: {{ member.training_plan }}</p>
+    <p>Current Weight: {{ member.current_weight }} kg</p>
+    <p>Target Weight Category: {{ member.target_weight_category }}</p>
+    <p>Sauna: {{ member.sauna }}</p>
+    <p>Swimming: {{ member.swimming }}</p>
+    <p>Private Trainer: {{ member.private_trainer }}</p>
+    <p>Total Training Cost: Nrs {{ total_cost }}</p>
+
+
+    {%  endblock content %}  
